@@ -1,6 +1,6 @@
 package be.athumi
 
-class WineShop(private val items: List<Wine>) {
+class WineShop(var items: List<Wine>) {
 
     private val strategies: Map<String, PricingStrategy> = mapOf(
         "Standard Wine" to StandardWineStrategy(),
